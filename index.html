@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Overthinking Reset — LUCID</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+
+<!-- ============================================================
+     LUCID — THE OVERTHINKING RESET
+     CONTENT LAYER — edit everything here, never touch below
+     ============================================================ -->
+<script>
+
+// ── MAILERLITE CONFIG ─────────────────────────────────────────
+// Paste your API key and Group ID between the quotes below
+const MAILERLITE_API_KEY  = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI0IiwianRpIjoiYWFiNzk2Nzg0N2JhY2E3Y2MyMmE5MjBiZTA3OTRmYjM3NmQwZjQ5ZDYxNjNhYmY5M2NiOWQzNmUxOTdjYzhhNDA1ZjU5MDA1NjYxZDUwMWMiLCJpYXQiOjE3NzUxMjQ2OTQuMjMzODg2LCJuYmYiOjE3NzUxMjQ2OTQuMjMzODg5LCJleHAiOjQ5MzA3OTgyOTQuMjMwNTU3LCJzdWIiOiIyMjU4OTgxIiwic2NvcGVzIjpbXX0.bQxEJ4cqeETFBhtiWjWfC8HrfU22z9Huc3KL_MFA7J_dtgngzuM2MdE90kuBfkEycg75i17xRz9SyoPwWuw9pb4K2vCvfm5_OOIiRKt6oX4Wr_QM_njiMoXWIh5RqKYMZg1bXGJ0z_rUy2Lm74-IygkS6hJJAKIT005o89N7jhc0yl9Ajn7FYxRRONpwQFs10uLne4cKFXiEW34PlEgX-8mQsFru0Ka3HUKxN8hkA3pB_4N2rDlX2sQ9x3N-oB4XYvva6ksWr6jim0DRHWxSq1Ao225TLtFdW6y-zBSGA9T0ILif5GBnQsRmqXoirBskbKryJBaHxUNyI-OVZcRxS6RjArbdLd3M3B7TuuRenAGsTtv1AboIIHnbDFLFXnw9HyK3oraofr_7Lome-3dFUOb48UImYmWD38RanYD7dli7mCN1vxkocjJHk8vwfgMQ556PypePUI4hsG32kh-bqwSx8kVWoFpudI0SmlRbHcJ_ZQO1ovXuI6jAuuXMzmoxP2G9w7zDMAH4nttT1CCZM6Lk0lX1Q897Ln0aulWAfxU4QirUQV8jUfe9Mz-m-mT7HLMx66CapWbom6fxoXY2F-L3uyxUZ2WlSiJrdfofld5kz4czyf7KVljVwcUGMHPjfAFe-NL_-XDAoJZ1TNKjGUVVV_1rgMvqVl71vy_pkck';
+const MAILERLITE_GROUP_ID = '183584787796068330';
+
+const CONTENT = {
+
+  gate: {
+    heading:          "Before you begin —\ntell us who's showing up.",
+    sub:              "Your reset will be personalised for you.\nWe just need to know where to send it.",
+    namePlaceholder:  "your first name",
+    emailPlaceholder: "your email address",
+    cta:              "BEGIN MY RESET →",
+    privacy:          "Your email stays with LUCID — no spam, no sharing.\nWe will walk with you through the week."
+  },
+
+  cover: {
+    eyebrow:  "THE",
+    title:    "OVERTHINKING\nRESET",
+    subtitle: "From Stuck to Becoming Her in 7 Days",
+    tag:      "A self-guided workbook · The Loop Break Method",
+    quote: [
+      "You already know what you want.",
+      "You know what you should do.",
+      "This is the space where you finally say it out loud."
+    ],
+    cta: "BEGIN YOUR RESET"
+  },
+
+  nav: {
+    eyebrow: "YOUR JOURNEY",
+    heading: "7 Days.\nOne Shift.",
+    sub:     "Choose where you are today."
+  },
+
+  // {name} is replaced with the user's first name automatically
+  moodIntros: {
+    heavy:     "{name}, you showed up heavy today. That is not weakness — it is honesty. The fact that you are here means something in you is still moving forward. Let that be enough for now.",
+    uncertain: "Uncertainty is the feeling right before clarity. You do not need to know where this is going. You just need to stay with it a little longer.",
+    hopeful:   "You arrived with something open today. Hold onto that. Hope is not naive — it is information. It is your deeper self signalling that something real is possible.",
+    restless:  "Restlessness is energy looking for direction. Something in you wants to move. Today we give it somewhere to go.",
+    ready:     "You are ready. That is rare and it matters. Do not waste this state — go in fully."
+  },
+
+  days: [
+
+    {
+      num: "01", theme: "Awareness",
+      sub: "The loop has a shape. Today you draw it.",
+      intro: [
+        "You cannot break a pattern you cannot see. Before anything else, you need to understand what your overthinking actually looks like — not in theory, but in your real life.",
+        "Most people experience overthinking as a formless cloud. But when you slow down and look, it has a trigger, a rhythm, and a moment where it takes hold. That moment is your entry point."
+      ],
+      openEntry: null,
+      exercise: null,
+      identityBoard: false,
+      prompts: [
+        { label: "PROMPT 01 — THE TRIGGER",
+          q:  "Think about the last time you got stuck in your head. What was happening just before it started? A decision? A message? A moment of comparison?",
+          ph: "Write whatever comes first. Don't edit." },
+        { label: "PROMPT 02 — THE LOOP",
+          q:  "What does the loop actually sound like? Write the exact thoughts as if transcribing them. Don't clean it up.",
+          ph: "Let it be messy. That's the point." },
+        { label: "PROMPT 03 — THE COST",
+          q:  "What did you not do, start, or finish because of this loop? Be honest. No self-judgment here — just truth.",
+          ph: "Just honesty. Nothing else is needed." }
+      ],
+      affirmation: "Naming the loop is the first act of separating from it."
+    },
+
+    {
+      num: "02", theme: "Thoughts ≠ Truth",
+      sub: "Your mind is not a fact-checker.",
+      intro: [
+        "A thought is just a thought. Not evidence. Not a verdict. It is electrical activity your brain produces automatically — shaped by fear, old experiences, and stories you were told about yourself.",
+        "Today you examine the thoughts driving your loop and ask the simplest hard question: is this actually true?"
+      ],
+      openEntry: null,
+      exercise: {
+        label:       "TODAY'S PRACTICE — REFRAME",
+        instruction: "Take your most frequent loop thought and write it down. Then rewrite it as a neutral observer would — not positive, not negative. Just accurate. What would someone who loves you and knows the full truth say about that thought?"
+      },
+      identityBoard: false,
+      prompts: [
+        { label: "PROMPT 01 — CATCH THE THOUGHT",
+          q:  "Write down the 3 most frequent thoughts in your loop. Don't filter — just what actually runs through your mind.",
+          ph: "'I always start things and never finish.' 'I'm not ready yet.' What's yours?" },
+        { label: "PROMPT 02 — CROSS-EXAMINE",
+          q:  "Take your strongest thought. What is the actual evidence for it? What would someone who truly loves you say about this thought?",
+          ph: "Be a fair witness to yourself." },
+        { label: "PROMPT 03 — THE REPLACEMENT",
+          q:  "Write a truer, more honest version of that thought. Not toxic positivity — just accuracy.",
+          ph: "'I've left things unfinished, AND I've also completed things that mattered to me.'" }
+      ],
+      affirmation: "You are not your thoughts. You are the one watching them."
+    },
+
+    {
+      num: "03", theme: "What You Actually Want",
+      sub: "The overthinking is covering something.",
+      intro: [
+        "Overthinking isn't a thinking problem. It's a wanting problem.",
+        "Somewhere underneath the loops, the second-guessing, the 'but what if' — there is something you want. Something clear. Something you already know. The overthinking exists to protect you from having to say it out loud, because saying it out loud makes it real. And real things can be lost. Real things require courage.",
+        "Today you stop protecting yourself from yourself."
+      ],
+      openEntry: {
+        label:       "BEFORE YOU BEGIN",
+        instruction: "Finish this sentence honestly — without thinking. Write the first thing that comes:",
+        ph:          "The thing I keep almost thinking about but stop myself is…"
+      },
+      exercise: {
+        label:       "TODAY'S PRACTICE — THE MIRROR",
+        instruction: "After you finish writing today — stand in front of a mirror. Look at yourself for 30 seconds without looking away. Then say out loud, once, and mean it: \"I am allowed to want what I want.\" That's all. Then close today."
+      },
+      identityBoard: false,
+      prompts: [
+        { label: "PROMPT 01 — THE COVER",
+          q:  "Think about the decision, situation, or person you overthink most right now. Underneath all of it — what is the actual thing you want? Not the logical answer. Not the responsible answer. The honest one.",
+          ph: "Name it plainly. No qualifiers." },
+        { label: "PROMPT 02 — THE FEAR UNDERNEATH THE WANT",
+          q:  "Why haven't you let yourself want this fully? What would it mean if you admitted you wanted this — and then didn't get it? What are you protecting yourself from?",
+          ph: "The fear is not the enemy. It's information." },
+        { label: "PROMPT 03 — THE SENTENCE YOU HAVEN'T SAID",
+          q:  "Complete this out loud first, then write it here: \"What I actually want, and have been afraid to admit, is ___\". Say it like you mean it. Read it back once.",
+          ph: "What I actually want, and have been afraid to admit, is…" }
+      ],
+      affirmation: "The want was never the problem. The silence around it was."
+    },
+
+    {
+      num: "04", theme: "Identity",
+      sub: "Act from who you're becoming, not who you've been.",
+      intro: [
+        "You've spent three days looking at what keeps you stuck. Today you look at what's waiting.",
+        "Not a fantasy. Not a vision board. A memory of someone you haven't become yet — but already recognise.",
+        "We act consistent with who we believe we are. Today you decide who that is."
+      ],
+      openEntry: null,
+      exercise: {
+        label:       "TODAY'S PRACTICE — THE VISUALISATION",
+        instruction: "Before you write — close your eyes. Give yourself five full minutes, uninterrupted.\n\nIt's a regular morning in your life, two years from now. Where are you waking up? What does the room feel like — the light, the quiet, the air? What does your body feel like, not perfect but free?\n\nYou get up. Look at your day. What are you doing with your time? What are you no longer doing that used to drain you? What do you have that you don't have now — not just things, but feelings. Safety. Clarity. Ownership of your own life.\n\nWho are you in relationship with? How do people feel in your presence? How do you feel in your own skin?\n\nWhat did you let go of to get here? What did you finally allow yourself to want?\n\nStay there for a few minutes. Let it feel real. It is allowed to feel real.\n\nNow open your eyes and write."
+      },
+      identityBoard: true,
+      prompts: [
+        { label: "PROMPT 01 — THE LETTER",
+          q:  "Write a letter to her. Start with her name — or simply 'Dear you' — and describe clearly: the life she's living, the person she's become, and what it took to get there. Be specific. Specific things make specific people real.",
+          ph: "Dear {name} — I finally see you clearly…" },
+        { label: "PROMPT 02 — CLOSE THE GAP",
+          q:  "What is one belief you need to adopt right now — not someday — to start acting like her today?",
+          ph: "One belief. Make it specific and personal." }
+      ],
+      affirmation: "Specific things make specific people real. She is real. Now act like it."
+    },
+
+    {
+      num: "05", theme: "Action",
+      sub: "One imperfect step beats ten perfect plans.",
+      intro: [
+        "Overthinking survives on inaction. Every hour you spend planning instead of doing feeds the loop. Today is about breaking the spell with one small, specific action.",
+        "The action doesn't need to be dramatic. It needs to be real."
+      ],
+      openEntry: null,
+      exercise: {
+        label:       "TODAY'S PRACTICE — DO THE THING",
+        instruction: "After you complete the prompts, close this and do the one action you identified. Not later. Now. The loop breaks through movement, not more thinking."
+      },
+      identityBoard: false,
+      prompts: [
+        { label: "PROMPT 01 — THE BACKLOG",
+          q:  "List every action you've been delaying because you 'need to think about it more.' Don't filter — write everything you've been sitting on.",
+          ph: "Everything. Even the small ones." },
+        { label: "PROMPT 02 — THE SMALLEST MOVE",
+          q:  "Pick one thing from the list. What is the single smallest action you could take on it today — something that takes under 10 minutes?",
+          ph: "Small is not weak. Small is how the loop breaks." },
+        { label: "PROMPT 03 — THE CONTRACT",
+          q:  "Write this out and mean it: \"I will do [specific action] at [specific time] today.\" Then close this and go do it.",
+          ph: "I will _____ at _____ today." }
+      ],
+      affirmation: "Action is not the reward for clarity. Action is how you get clarity."
+    },
+
+    {
+      num: "06", theme: "Self-Trust",
+      sub: "You have been right before. You are right now.",
+      intro: [
+        "The deepest root of overthinking is fractured trust in your own judgment. Somewhere along the way you stopped trusting yourself to make the call.",
+        "Self-trust is rebuilt the same way any trust is rebuilt — through evidence and consistency. Today you collect the evidence you've been ignoring."
+      ],
+      openEntry: null,
+      exercise: {
+        label:       "TODAY'S PRACTICE — YOUR CLOSING ARGUMENT",
+        instruction: "After you finish the prompts, write one paragraph as if you are defending yourself in front of a judge who needs to be convinced you deserve your own trust. What's your case? Be your own best advocate. Make it compelling."
+      },
+      identityBoard: false,
+      prompts: [
+        { label: "PROMPT 01 — THE EVIDENCE BANK",
+          q:  "Write down 10 times you trusted yourself and it worked out. Decisions, instincts, conversations. Go back as far as you need.",
+          ph: "Start with the obvious ones. Then go deeper." },
+        { label: "PROMPT 02 — THE ORIGIN",
+          q:  "When did you start doubting your own judgment? Is it possible you've been judging your present self by a past event that no longer applies?",
+          ph: "Be gentle here." },
+        { label: "PROMPT 03 — THE SIGNAL",
+          q:  "Think of what you're currently overthinking. If you had to trust your gut right now — what does it actually say?",
+          ph: "Just one sentence. What does it say?" }
+      ],
+      affirmation: "Every time you act despite doubt, you deposit into your self-trust account."
+    },
+
+    {
+      num: "07", theme: "Becoming",
+      sub: "She was always you. This week, you remembered.",
+      intro: [
+        "Today is not about new goals or systems. Today is about anchoring — deciding how you carry forward what this week revealed.",
+        "You have spent six days being more honest with yourself than most people are in a year. That is not nothing. That is everything."
+      ],
+      openEntry: null,
+      exercise: {
+        label:       "TODAY'S PRACTICE — THE CEREMONY",
+        instruction: "Design a small ritual to mark that something changed this week. It doesn't need to be big — it needs to be intentional. Light a candle. Delete something that no longer belongs in your life. Write something on paper and burn it. Take yourself somewhere meaningful alone. Whatever feels true to you. Do it today. Ceremony is how we tell ourselves that something real happened."
+      },
+      identityBoard: false,
+      prompts: [
+        { label: "PROMPT 01 — THE SHIFT",
+          q:  "Compare who you were on Day 1 to who you are right now. What is different? What do you know now that you didn't before? Don't minimise what happened this week.",
+          ph: "Something shifted. Name it." },
+        { label: "PROMPT 02 — THE DECLARATION",
+          q:  "Write a letter to yourself from the version of you who has fully broken the loop. What does she want you to remember when it gets hard again?",
+          ph: "Let her speak. She has been waiting." },
+        { label: "PROMPT 03 — THE NEXT MOVE",
+          q:  "What is the one real action you're committing to in the next 48 hours — the one the old you would have overthought indefinitely?",
+          ph: "Name it. Make it real." }
+      ],
+      affirmation: "You did not fix yourself this week. You returned to yourself."
+    }
+
+  ], // end days
+
+  completion: {
+    eyebrow:            "YOU MADE IT",
+    heading:            "Seven days ago\nyou showed up\nfor yourself.",
+    body: [
+      "That was the hardest part — and you did it.",
+      "Something shifted this week. You felt it. You are not the same person who started Day 1. And you are not finished — you are just beginning.",
+      "LUCID has been waiting for you to get here."
+    ],
+    sharePrompt:        "If this week changed something in you — send it to one person who needs it.",
+    shareText:          "I just finished a 7-day self-guided journey that genuinely shifted something. It's called The Overthinking Reset by LUCID. Worth it.",
+    nextLabel:          "WHAT COMES NEXT",
+    nextBody:           "The Overthinking Reset was the first door. The next part of the journey goes deeper — into identity, patterns, and the life you have been building toward. Join the waitlist to be the first to know when it's ready.",
+    waitlistPlaceholder:"your email address",
+    waitlistCta:        "I'M READY FOR WHAT'S NEXT",
+    closingLine:        "She was always you. This week, you remembered."
+  }
+
+}; // end CONTENT
+</script>
+
+<!-- ============================================================
+     STYLES — do not edit
+     ============================================================ -->
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --forest-deep:  #1A2420;
+    --forest-mid:   #2C4A3E;
+    --forest-light: #3D6B5A;
+    --sage:         #7A9E8E;
+    --sage-pale:    #B8CEC7;
+    --sage-wash:    #E8EFEC;
+    --linen:        #F7F3EE;
+    --linen-deep:   #EDE5D8;
+    --parchment:    #F0EBE3;
+    --gold:         #C9A96E;
+    --ink:          #1E2A26;
+    --ink-body:     #2E3D37;
+    --ink-muted:    #6B7F78;
+    --ink-faint:    #A8B8B3;
+    --off-white:    #EDE8DF;
+    --cover-muted:  #8A9E97;
+  }
+
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    background: var(--forest-deep);
+    color: var(--off-white);
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  .screen { display: none; min-height: 100vh; }
+  .screen.active { display: flex; flex-direction: column; }
+
+  /* COVER */
+  #screen-cover {
+    background: var(--forest-deep);
+    align-items: center; justify-content: center;
+    text-align: center; padding: 48px 32px;
+    position: relative; overflow: hidden;
+  }
+  #screen-cover::before {
+    content: ''; position: absolute; top: 0; left: 0; right: 0; height: 45%;
+    background: radial-gradient(ellipse at 50% 0%, rgba(44,74,62,0.4) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .corner-mark {
+    position: absolute; width: 28px; height: 28px;
+    border-color: var(--gold); border-style: solid; opacity: 0.25;
+  }
+  .corner-mark.tl { top:20px; left:20px; border-width:1px 0 0 1px; }
+  .corner-mark.tr { top:20px; right:20px; border-width:1px 1px 0 0; }
+  .corner-mark.bl { bottom:20px; left:20px; border-width:0 0 1px 1px; }
+  .corner-mark.br { bottom:20px; right:20px; border-width:0 1px 1px 0; }
+  .cover-inner { position: relative; z-index: 1; max-width: 420px; width: 100%; }
+  .brand-mark {
+    font-family:'Jost',sans-serif; font-size:11px; font-weight:400;
+    letter-spacing:8px; color:var(--gold); margin-bottom:28px;
+    animation: fadeUp .8s ease both;
+  }
+  .cover-rule { width:100px; height:1px; background:var(--gold); opacity:0.3; margin:0 auto 28px; animation:fadeUp .8s .1s ease both; }
+  .cover-the { font-family:'Jost',sans-serif; font-size:11px; font-weight:300; letter-spacing:4px; color:var(--cover-muted); margin-bottom:10px; animation:fadeUp .8s .15s ease both; }
+  .cover-title { font-size:clamp(40px,10vw,58px); font-weight:700; color:var(--off-white); line-height:1.0; letter-spacing:-1px; margin-bottom:22px; white-space:pre-line; animation:fadeUp .8s .2s ease both; }
+  .cover-rule-2 { width:100px; height:1px; background:var(--gold); opacity:0.3; margin:0 auto 18px; animation:fadeUp .8s .25s ease both; }
+  .cover-sub { font-family:'Jost',sans-serif; font-size:13px; font-weight:300; color:var(--cover-muted); letter-spacing:1px; margin-bottom:6px; animation:fadeUp .8s .3s ease both; }
+  .cover-tag { font-size:13px; font-style:italic; color:var(--gold); opacity:0.8; margin-bottom:44px; animation:fadeUp .8s .35s ease both; }
+  .cover-quote { font-size:16px; font-style:italic; color:var(--sage); line-height:1.8; margin-bottom:44px; animation:fadeUp .8s .4s ease both; }
+  .begin-btn {
+    font-family:'Jost',sans-serif; font-size:11px; font-weight:400;
+    letter-spacing:4px; color:var(--gold); background:none;
+    border:1px solid var(--gold); padding:16px 40px;
+    cursor:pointer; transition:all .3s; animation:fadeUp .8s .5s ease both;
+  }
+  .begin-btn:hover { background:var(--gold); color:var(--forest-deep); }
+
+  /* GATE */
+  #screen-gate {
+    background: var(--forest-deep);
+    align-items:center; justify-content:center;
+    text-align:center; padding:48px 32px;
+    position:relative; overflow:hidden;
+  }
+  #screen-gate::before {
+    content:''; position:absolute; top:0; left:0; right:0; height:45%;
+    background:radial-gradient(ellipse at 50% 0%, rgba(44,74,62,0.4) 0%, transparent 70%);
+    pointer-events:none;
+  }
+  .gate-inner { max-width:380px; width:100%; position:relative; z-index:1; }
+  .gate-brand { font-family:'Jost',sans-serif; font-size:11px; letter-spacing:8px; color:var(--gold); margin-bottom:40px; animation:fadeUp .8s ease both; }
+  .gate-heading { font-size:clamp(24px,6vw,34px); font-weight:700; color:var(--off-white); line-height:1.2; margin-bottom:12px; white-space:pre-line; animation:fadeUp .8s .1s ease both; }
+  .gate-sub { font-size:14px; font-style:italic; color:var(--sage); line-height:1.75; margin-bottom:40px; white-space:pre-line; animation:fadeUp .8s .15s ease both; }
+  .gate-fields { display:flex; flex-direction:column; gap:12px; margin-bottom:20px; animation:fadeUp .8s .2s ease both; }
+  .gate-input {
+    font-family:'Jost',sans-serif; font-size:13px; letter-spacing:1px;
+    background:rgba(44,74,62,0.35); border:1px solid var(--forest-mid);
+    color:var(--off-white); padding:14px 18px; border-radius:2px;
+    outline:none; transition:border-color .2s; width:100%;
+  }
+  .gate-input:focus { border-color:var(--sage); }
+  .gate-input::placeholder { color:var(--ink-muted); }
+  .gate-btn {
+    font-family:'Jost',sans-serif; font-size:11px; letter-spacing:4px;
+    color:var(--forest-deep); background:var(--gold); border:none;
+    padding:15px 32px; cursor:pointer; border-radius:2px;
+    transition:opacity .2s; width:100%; animation:fadeUp .8s .25s ease both;
+  }
+  .gate-btn:hover { opacity:0.88; }
+  .gate-error { font-family:'Jost',sans-serif; font-size:11px; color:var(--gold); margin-top:4px; text-align:left; display:none; }
+  .gate-error.visible { display:block; }
+  .gate-privacy { font-family:'Jost',sans-serif; font-size:10px; color:var(--ink-muted); margin-top:14px; letter-spacing:0.5px; line-height:1.6; white-space:pre-line; animation:fadeUp .8s .3s ease both; }
+
+  /* NAV */
+  #screen-nav { background:var(--forest-deep); padding:0; }
+  .nav-header { padding:24px 28px 20px; border-bottom:1px solid rgba(44,74,62,0.5); display:flex; align-items:center; justify-content:space-between; }
+  .nav-brand { font-family:'Jost',sans-serif; font-size:11px; letter-spacing:6px; color:var(--gold); }
+  .nav-title-block { padding:32px 28px 24px; }
+  .nav-eyebrow { font-family:'Jost',sans-serif; font-size:9px; letter-spacing:3px; color:var(--sage); margin-bottom:8px; }
+  .nav-heading { font-size:32px; font-weight:700; color:var(--off-white); line-height:1.1; margin-bottom:4px; white-space:pre-line; }
+  .nav-sub { font-size:14px; font-style:italic; color:var(--ink-muted); margin-top:6px; }
+  .nav-rule { height:1px; background:var(--forest-mid); margin:0 28px 24px; }
+  .chapter-list { padding:0 20px 40px; display:flex; flex-direction:column; gap:8px; }
+  .chapter-btn { background:none; border:1px solid var(--forest-mid); border-radius:6px; padding:16px 18px; display:flex; align-items:center; justify-content:space-between; cursor:pointer; transition:all .2s; text-align:left; width:100%; }
+  .chapter-btn:hover { border-color:var(--sage); background:rgba(44,74,62,0.2); }
+  .chapter-btn.completed { border-color:rgba(122,158,142,0.4); }
+  .chapter-btn-left { flex:1; }
+  .ch-day-label { font-family:'Jost',sans-serif; font-size:9px; letter-spacing:3px; color:var(--gold); margin-bottom:4px; }
+  .ch-theme-text { font-size:17px; font-weight:600; color:var(--off-white); line-height:1.2; }
+  .ch-sub-text { font-size:12px; font-style:italic; color:var(--ink-muted); margin-top:3px; }
+  .ch-check { width:20px; height:20px; border-radius:50%; border:1px solid var(--forest-light); flex-shrink:0; display:flex; align-items:center; justify-content:center; margin-left:14px; transition:all .3s; }
+  .ch-check.done { background:var(--forest-light); border-color:var(--forest-light); }
+  .ch-check.done::after { content:''; width:5px; height:9px; border:1.5px solid var(--linen); border-top:none; border-left:none; transform:rotate(45deg) translateY(-1px); display:block; }
+
+  /* DAY */
+  #screen-day { background:var(--linen); color:var(--ink); flex-direction:column; }
+  .day-topbar { background:var(--forest-deep); padding:16px 20px; display:flex; align-items:center; justify-content:space-between; flex-shrink:0; }
+  .back-link { font-family:'Jost',sans-serif; font-size:10px; letter-spacing:2px; color:var(--sage); background:none; border:none; cursor:pointer; transition:color .2s; padding:0; }
+  .back-link:hover { color:var(--gold); }
+  .topbar-brand { font-family:'Jost',sans-serif; font-size:10px; letter-spacing:5px; color:var(--gold); }
+  .progress-row { display:flex; gap:5px; align-items:center; }
+  .pdot { width:6px; height:6px; border-radius:50%; background:var(--forest-mid); transition:background .3s; }
+  .pdot.done { background:var(--sage); }
+  .pdot.active { background:var(--gold); width:8px; height:8px; }
+  .day-scroll { flex:1; overflow-y:auto; padding:28px 24px 100px; }
+
+  .mood-section { margin-bottom:24px; }
+  .section-eyebrow { font-family:'Jost',sans-serif; font-size:9px; letter-spacing:3px; color:var(--sage); margin-bottom:10px; }
+  .mood-pills { display:flex; gap:8px; flex-wrap:wrap; }
+  .mood-pill { font-family:'Jost',sans-serif; font-size:11px; font-weight:400; color:var(--forest-light); background:none; border:1px solid var(--sage-pale); border-radius:30px; padding:7px 16px; cursor:pointer; transition:all .2s; }
+  .mood-pill:hover { border-color:var(--sage); color:var(--forest-deep); background:var(--sage-pale); }
+  .mood-pill.selected { background:var(--forest-mid); border-color:var(--forest-mid); color:var(--linen); }
+  .mood-response { margin-top:12px; font-size:13px; font-style:italic; color:var(--ink-muted); line-height:1.75; min-height:24px; opacity:0; transition:opacity .4s ease; }
+  .mood-response.visible { opacity:1; }
+
+  .day-label-eyebrow { font-family:'Jost',sans-serif; font-size:9px; letter-spacing:3px; color:var(--sage); margin-bottom:6px; margin-top:4px; }
+  .day-main-title { font-size:clamp(28px,7vw,38px); font-weight:700; color:var(--forest-deep); line-height:1.1; margin-bottom:4px; }
+  .day-rule { width:100%; height:1px; background:var(--sage-pale); margin:12px 0 8px; }
+  .day-subtitle { font-size:14px; font-style:italic; color:var(--ink-muted); margin-bottom:16px; line-height:1.6; }
+  .day-intro { font-size:14px; color:var(--ink-body); line-height:1.85; margin-bottom:8px; }
+
+  .open-entry-section { margin:20px 0; background:var(--linen-deep); border-left:3px solid var(--gold); border-radius:0 6px 6px 0; padding:16px 18px; }
+  .open-entry-label { font-family:'Jost',sans-serif; font-size:9px; letter-spacing:3px; color:var(--gold); margin-bottom:8px; }
+  .open-entry-instruction { font-size:13px; font-style:italic; color:var(--ink-muted); margin-bottom:10px; line-height:1.7; }
+
+  .exercise-section { margin:20px 0; background:var(--sage-wash); border-left:3px solid var(--sage); border-radius:0 6px 6px 0; padding:16px 18px; }
+  .exercise-label { font-family:'Jost',sans-serif; font-size:9px; letter-spacing:3px; color:var(--forest-light); margin-bottom:8px; }
+  .exercise-instruction { font-size:13px; color:var(--ink-body); line-height:1.8; white-space:pre-line; }
+
+  .identity-section { margin:20px 0 4px; }
+  .identity-grid { display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-top:10px; }
+  .identity-card { background:var(--sage-wash); border-radius:0 8px 8px 0; border-left:3px solid var(--forest-light); padding:14px 14px 12px; }
+  .identity-card-label { font-family:'Jost',sans-serif; font-size:8px; letter-spacing:2.5px; color:var(--forest-light); font-weight:500; margin-bottom:7px; display:block; }
+  .identity-card textarea { width:100%; background:none; border:none; outline:none; font-family:'Cormorant Garamond',serif; font-size:13px; color:var(--ink); line-height:1.65; resize:none; min-height:60px; }
+  .identity-card textarea::placeholder { color:var(--ink-faint); font-style:italic; }
+
+  .prompts-section { margin-top:20px; }
+  .prompt-divider { height:1px; background:var(--sage-wash); margin:16px 0 14px; }
+  .prompt-label { font-family:'Jost',sans-serif; font-size:9px; letter-spacing:2px; color:var(--forest-light); font-weight:500; margin-bottom:6px; }
+  .prompt-question { font-size:14px; font-style:italic; color:var(--ink); line-height:1.75; margin-bottom:10px; }
+  .write-area { width:100%; background:var(--sage-wash); border:none; border-left:3px solid var(--forest-light); border-radius:0 6px 6px 0; padding:14px 16px; font-family:'Cormorant Garamond',serif; font-size:14px; color:var(--ink); line-height:1.8; resize:vertical; outline:none; min-height:100px; transition:background .2s, border-color .2s; }
+  .write-area:focus { background:#dce6e2; border-left-color:var(--forest-deep); }
+  .write-area::placeholder { color:var(--ink-faint); font-style:italic; }
+
+  .day-bottom { position:fixed; bottom:0; left:0; right:0; background:var(--parchment); border-top:1px solid var(--sage-pale); padding:14px 24px; display:flex; align-items:center; justify-content:space-between; z-index:10; }
+  .day-counter { font-family:'Jost',sans-serif; font-size:11px; color:var(--ink-faint); letter-spacing:1px; }
+  .ritual-btn { font-family:'Jost',sans-serif; font-size:10px; letter-spacing:2px; color:var(--linen); background:var(--forest-mid); border:none; padding:11px 22px; cursor:pointer; border-radius:3px; transition:background .2s; }
+  .ritual-btn:hover { background:var(--forest-light); }
+
+  /* RITUAL */
+  #screen-ritual { background:var(--forest-deep); align-items:center; justify-content:center; text-align:center; padding:48px 32px; }
+  .ritual-inner { max-width:360px; width:100%; }
+  .ritual-eyebrow { font-family:'Jost',sans-serif; font-size:9px; letter-spacing:4px; color:var(--sage); margin-bottom:36px; }
+  .breath-container { position:relative; width:100px; height:100px; margin:0 auto 28px; }
+  .breath-ring-outer { position:absolute; inset:0; border-radius:50%; border:1px solid var(--sage); animation:breatheOuter 4s ease-in-out infinite; }
+  .breath-ring-inner { position:absolute; inset:18px; border-radius:50%; border:1px solid var(--gold); opacity:0.4; animation:breatheInner 4s ease-in-out infinite; }
+  @keyframes breatheOuter { 0%,100%{transform:scale(1);opacity:0.6} 50%{transform:scale(1.18);opacity:1} }
+  @keyframes breatheInner { 0%,100%{transform:scale(1);opacity:0.4} 50%{transform:scale(1.1);opacity:0.8} }
+  .ritual-instruction { font-family:'Jost',sans-serif; font-size:12px; color:var(--ink-muted); margin-bottom:36px; line-height:1.7; letter-spacing:0.5px; }
+  .reveal-affirmation-btn { font-family:'Jost',sans-serif; font-size:10px; letter-spacing:3px; color:var(--sage); background:none; border:1px solid var(--forest-light); padding:12px 28px; cursor:pointer; border-radius:2px; transition:all .3s; margin-bottom:32px; display:block; width:100%; }
+  .reveal-affirmation-btn:hover { border-color:var(--gold); color:var(--gold); }
+  .ritual-affirmation { font-size:20px; font-style:italic; font-weight:600; color:var(--off-white); line-height:1.65; margin-bottom:36px; opacity:0; transform:translateY(8px); transition:opacity 1.2s ease, transform 1.2s ease; min-height:80px; }
+  .ritual-affirmation.visible { opacity:1; transform:translateY(0); }
+  .complete-btn { font-family:'Jost',sans-serif; font-size:10px; letter-spacing:3px; color:var(--forest-deep); background:var(--gold); border:none; padding:14px 32px; cursor:pointer; border-radius:2px; transition:opacity .2s; width:100%; }
+  .complete-btn:hover { opacity:0.88; }
+
+  /* COMPLETION */
+  #screen-completion { background:var(--forest-deep); align-items:center; justify-content:center; text-align:center; padding:64px 32px; position:relative; overflow:hidden; }
+  #screen-completion::before { content:''; position:absolute; top:0; left:0; right:0; height:50%; background:radial-gradient(ellipse at 50% 0%, rgba(201,169,110,0.08) 0%, transparent 70%); pointer-events:none; }
+  .completion-inner { max-width:400px; width:100%; position:relative; z-index:1; }
+  .completion-eyebrow { font-family:'Jost',sans-serif; font-size:9px; letter-spacing:5px; color:var(--gold); margin-bottom:40px; animation:fadeUp .8s ease both; }
+  .completion-heading { font-size:clamp(32px,8vw,48px); font-weight:700; color:var(--off-white); line-height:1.1; margin-bottom:32px; white-space:pre-line; animation:fadeUp .8s .1s ease both; }
+  .completion-rule { width:60px; height:1px; background:var(--gold); opacity:0.3; margin:0 auto 32px; animation:fadeUp .8s .15s ease both; }
+  .completion-body { font-size:15px; color:var(--sage); line-height:1.85; margin-bottom:12px; animation:fadeUp .8s .2s ease both; }
+  .completion-share-block { margin:40px 0 32px; padding:24px 20px; border:1px solid rgba(122,158,142,0.2); border-radius:4px; animation:fadeUp .8s .3s ease both; }
+  .completion-share-prompt { font-size:13px; font-style:italic; color:var(--ink-muted); margin-bottom:14px; line-height:1.65; }
+  .share-btn { font-family:'Jost',sans-serif; font-size:10px; letter-spacing:3px; color:var(--sage); background:none; border:1px solid var(--forest-light); padding:11px 24px; cursor:pointer; border-radius:2px; transition:all .3s; }
+  .share-btn:hover { border-color:var(--sage); color:var(--off-white); }
+  .completion-next-block { margin-top:40px; animation:fadeUp .8s .4s ease both; }
+  .completion-next-label { font-family:'Jost',sans-serif; font-size:9px; letter-spacing:3px; color:var(--gold); margin-bottom:12px; }
+  .completion-next-body { font-size:14px; color:var(--ink-muted); line-height:1.75; margin-bottom:20px; }
+  .waitlist-row { display:flex; gap:8px; flex-wrap:wrap; justify-content:center; }
+  .waitlist-input { font-family:'Jost',sans-serif; font-size:12px; letter-spacing:1px; background:rgba(44,74,62,0.3); border:1px solid var(--forest-mid); color:var(--off-white); padding:12px 16px; border-radius:2px; outline:none; flex:1; min-width:200px; transition:border-color .2s; }
+  .waitlist-input:focus { border-color:var(--sage); }
+  .waitlist-input::placeholder { color:var(--ink-muted); }
+  .waitlist-btn { font-family:'Jost',sans-serif; font-size:9px; letter-spacing:3px; color:var(--forest-deep); background:var(--gold); border:none; padding:12px 20px; cursor:pointer; border-radius:2px; transition:opacity .2s; white-space:nowrap; }
+  .waitlist-btn:hover { opacity:0.88; }
+  .waitlist-btn.submitted { background:var(--sage); color:var(--linen); cursor:default; opacity:1; }
+  .completion-closing { margin-top:48px; font-size:17px; font-style:italic; font-weight:600; color:var(--off-white); opacity:0.5; line-height:1.6; animation:fadeUp .8s .5s ease both; }
+
+  @keyframes fadeUp { from{opacity:0;transform:translateY(14px)} to{opacity:1;transform:translateY(0)} }
+  .fade-up { animation:fadeUp .5s ease both; }
+
+  .day-scroll::-webkit-scrollbar { width:4px; }
+  .day-scroll::-webkit-scrollbar-track { background:transparent; }
+  .day-scroll::-webkit-scrollbar-thumb { background:var(--sage-pale); border-radius:2px; }
+
+  @media (max-width:480px) {
+    .identity-grid { grid-template-columns:1fr; }
+    .day-scroll { padding:22px 18px 100px; }
+    .chapter-list { padding:0 14px 40px; }
+    .waitlist-row { flex-direction:column; }
+    .waitlist-input { min-width:unset; }
+  }
+</style>
+</head>
+<body>
+
+<!-- COVER -->
+<div id="screen-cover" class="screen active">
+  <div class="corner-mark tl"></div><div class="corner-mark tr"></div>
+  <div class="corner-mark bl"></div><div class="corner-mark br"></div>
+  <div class="cover-inner" id="cover-inner"></div>
+</div>
+
+<!-- GATE -->
+<div id="screen-gate" class="screen">
+  <div class="corner-mark tl"></div><div class="corner-mark tr"></div>
+  <div class="corner-mark bl"></div><div class="corner-mark br"></div>
+  <div class="gate-inner" id="gate-inner"></div>
+</div>
+
+<!-- NAV -->
+<div id="screen-nav" class="screen">
+  <div class="nav-header"><div class="nav-brand">L U C I D</div></div>
+  <div class="nav-title-block" id="nav-title-block"></div>
+  <div class="nav-rule"></div>
+  <div class="chapter-list" id="chapter-list"></div>
+</div>
+
+<!-- DAY -->
+<div id="screen-day" class="screen">
+  <div class="day-topbar">
+    <button class="back-link" onclick="showNav()">← all days</button>
+    <div class="topbar-brand">LUCID</div>
+    <div class="progress-row" id="progress-row"></div>
+  </div>
+  <div class="day-scroll" id="day-scroll"></div>
+  <div class="day-bottom">
+    <div class="day-counter" id="day-counter"></div>
+    <button class="ritual-btn" onclick="showRitual()">closing ritual →</button>
+  </div>
+</div>
+
+<!-- RITUAL -->
+<div id="screen-ritual" class="screen">
+  <div class="ritual-inner">
+    <div class="ritual-eyebrow">CLOSING RITUAL</div>
+    <div class="breath-container">
+      <div class="breath-ring-outer"></div>
+      <div class="breath-ring-inner"></div>
+    </div>
+    <p class="ritual-instruction">
+      Breathe with the ring.<br>
+      Inhale as it expands.<br>
+      Exhale as it returns.
+    </p>
+    <button class="reveal-affirmation-btn" onclick="revealAffirmation()">reveal today's affirmation</button>
+    <div class="ritual-affirmation" id="ritual-affirmation"></div>
+    <button class="complete-btn" onclick="completeDay()">mark complete &amp; continue →</button>
+  </div>
+</div>
+
+<!-- COMPLETION -->
+<div id="screen-completion" class="screen">
+  <div class="completion-inner" id="completion-inner"></div>
+</div>
+
+<!-- ============================================================
+     LOGIC — do not edit
+     ============================================================ -->
+<script>
+let userName  = '';
+let userEmail = '';
+let currentDay = 0;
+let completed  = new Array(7).fill(false);
+
+window.addEventListener('DOMContentLoaded', () => {
+  renderCover();
+  renderGate();
+  renderNavTitles();
+});
+
+function renderCover() {
+  const c = CONTENT.cover;
+  document.getElementById('cover-inner').innerHTML = `
+    <div class="brand-mark">L U C I D</div>
+    <div class="cover-rule"></div>
+    <div class="cover-the">${c.eyebrow}</div>
+    <div class="cover-title">${c.title}</div>
+    <div class="cover-rule-2"></div>
+    <div class="cover-sub">${c.subtitle}</div>
+    <div class="cover-tag">${c.tag}</div>
+    <div class="cover-quote">${c.quote.join('<br>')}</div>
+    <button class="begin-btn" onclick="showScreen('screen-gate')">${c.cta}</button>
+  `;
+}
+
+function renderGate() {
+  const g = CONTENT.gate;
+  document.getElementById('gate-inner').innerHTML = `
+    <div class="gate-brand">L U C I D</div>
+    <div class="gate-heading">${g.heading}</div>
+    <div class="gate-sub">${g.sub}</div>
+    <div class="gate-fields">
+      <input class="gate-input" type="text" id="gate-name" placeholder="${g.namePlaceholder}" autocomplete="given-name">
+      <div class="gate-error" id="gate-name-error">Please enter your name.</div>
+      <input class="gate-input" type="email" id="gate-email" placeholder="${g.emailPlaceholder}" autocomplete="email">
+      <div class="gate-error" id="gate-email-error">Please enter a valid email address.</div>
+    </div>
+    <button class="gate-btn" onclick="submitGate()">${g.cta}</button>
+    <div class="gate-privacy">${g.privacy}</div>
+  `;
+}
+
+function submitGate() {
+  const nameEl   = document.getElementById('gate-name');
+  const emailEl  = document.getElementById('gate-email');
+  const nameErr  = document.getElementById('gate-name-error');
+  const emailErr = document.getElementById('gate-email-error');
+  let valid = true;
+
+  if (!nameEl.value.trim()) {
+    nameErr.classList.add('visible'); valid = false;
+  } else { nameErr.classList.remove('visible'); }
+
+  const ev = emailEl.value.trim();
+  if (!ev || !ev.includes('@') || !ev.includes('.')) {
+    emailErr.classList.add('visible'); valid = false;
+  } else { emailErr.classList.remove('visible'); }
+
+  if (!valid) return;
+
+  userName  = nameEl.value.trim().split(' ')[0];
+  userEmail = ev;
+  subscribeToMailerLite(userEmail, userName, MAILERLITE_GROUP_ID);
+  renderNavTitles();
+  showNav();
+}
+
+async function subscribeToMailerLite(email, name, groupId) {
+  if (!MAILERLITE_API_KEY || MAILERLITE_API_KEY === 'PASTE_YOUR_API_KEY_HERE') return;
+  try {
+    await fetch('https://connect.mailerlite.com/api/subscribers', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${MAILERLITE_API_KEY}`
+      },
+      body: JSON.stringify({
+        email,
+        fields: { name },
+        groups: [groupId],
+        status: 'active'
+      })
+    });
+  } catch (e) { console.warn('MailerLite:', e); }
+}
+
+function showScreen(id) {
+  document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  window.scrollTo(0, 0);
+}
+
+function showNav() { renderNav(); showScreen('screen-nav'); }
+
+function renderNavTitles() {
+  const n = CONTENT.nav;
+  const eyebrow = userName ? `${userName}'s Journey` : n.eyebrow;
+  document.getElementById('nav-title-block').innerHTML = `
+    <div class="nav-eyebrow">${eyebrow}</div>
+    <div class="nav-heading">${n.heading}</div>
+    <div class="nav-sub">${n.sub}</div>
+  `;
+}
+
+function renderNav() {
+  renderNavTitles();
+  document.getElementById('chapter-list').innerHTML = CONTENT.days.map((d, i) => `
+    <button class="chapter-btn${completed[i] ? ' completed' : ''}" onclick="openDay(${i})">
+      <div class="chapter-btn-left">
+        <div class="ch-day-label">DAY ${d.num}</div>
+        <div class="ch-theme-text">${d.theme}</div>
+        <div class="ch-sub-text">${d.sub}</div>
+      </div>
+      <div class="ch-check${completed[i] ? ' done' : ''}"></div>
+    </button>
+  `).join('');
+}
+
+function openDay(i) { currentDay = i; renderDayScreen(); showScreen('screen-day'); }
+
+function renderDayScreen() {
+  const d = CONTENT.days[currentDay];
+
+  document.getElementById('progress-row').innerHTML = CONTENT.days.map((_, i) =>
+    `<div class="pdot${i === currentDay ? ' active' : completed[i] ? ' done' : ''}"></div>`
+  ).join('');
+  document.getElementById('day-counter').textContent = `Day ${currentDay + 1} of 7`;
+
+  let html = '';
+
+  // Mood
+  html += `
+    <div class="mood-section fade-up">
+      <div class="section-eyebrow">HOW ARE YOU ARRIVING TODAY?</div>
+      <div class="mood-pills">
+        ${Object.keys(CONTENT.moodIntros).map(m =>
+          `<button class="mood-pill" onclick="selectMood(this,'${m}')">${m}</button>`
+        ).join('')}
+      </div>
+      <div class="mood-response" id="mood-response"></div>
+    </div>`;
+
+  // Header
+  html += `
+    <div class="fade-up" style="animation-delay:.05s">
+      <div class="day-label-eyebrow">DAY ${d.num}</div>
+      <div class="day-main-title">${d.theme}</div>
+      <div class="day-rule"></div>
+      <div class="day-subtitle">${d.sub}</div>
+      ${d.intro.map(p => `<p class="day-intro">${p}</p>`).join('')}
+    </div>`;
+
+  // Open entry (Day 3)
+  if (d.openEntry) {
+    html += `
+      <div class="open-entry-section fade-up" style="animation-delay:.08s">
+        <div class="open-entry-label">${d.openEntry.label}</div>
+        <div class="open-entry-instruction">${d.openEntry.instruction}</div>
+        <textarea class="write-area" placeholder="${d.openEntry.ph}" rows="3"></textarea>
+      </div>`;
+  }
+
+  // Identity board (Day 4)
+  if (d.identityBoard) {
+    html += `
+      <div class="identity-section fade-up" style="animation-delay:.1s">
+        <div class="section-eyebrow">BUILD HER — YOUR IDENTITY BOARD</div>
+        <div class="identity-grid">
+          <div class="identity-card"><span class="identity-card-label">SHE THINKS</span><textarea placeholder="She doesn't wait for certainty…" rows="3"></textarea></div>
+          <div class="identity-card"><span class="identity-card-label">SHE FEELS</span><textarea placeholder="Grounded even when uncertain…" rows="3"></textarea></div>
+          <div class="identity-card"><span class="identity-card-label">SHE DOES</span><textarea placeholder="She acts before she's ready…" rows="3"></textarea></div>
+          <div class="identity-card"><span class="identity-card-label">SHE HAS</span><textarea placeholder="The life she stopped apologising for wanting…" rows="3"></textarea></div>
+        </div>
+      </div>`;
+  }
+
+  // Exercise
+  if (d.exercise) {
+    html += `
+      <div class="exercise-section fade-up" style="animation-delay:.12s">
+        <div class="exercise-label">${d.exercise.label}</div>
+        <div class="exercise-instruction">${d.exercise.instruction}</div>
+      </div>`;
+  }
+
+  // Prompts
+  html += `<div class="prompts-section fade-up" style="animation-delay:.15s">`;
+  d.prompts.forEach((p, i) => {
+    const ph = p.ph.replace('{name}', userName || 'you');
+    html += `
+      <div class="prompt-divider"></div>
+      <div class="prompt-label">${p.label}</div>
+      <div class="prompt-question">${p.q}</div>
+      <textarea class="write-area" placeholder="${ph}" id="ans_${currentDay}_${i}" rows="4"></textarea>`;
+  });
+  html += `</div>`;
+
+  document.getElementById('day-scroll').innerHTML = html;
+}
+
+function selectMood(btn, mood) {
+  btn.closest('.mood-pills').querySelectorAll('.mood-pill').forEach(b => b.classList.remove('selected'));
+  btn.classList.add('selected');
+  const el = document.getElementById('mood-response');
+  let text = (CONTENT.moodIntros[mood] || '').replace('{name}', userName || 'You');
+  el.textContent = text;
+  el.classList.remove('visible');
+  requestAnimationFrame(() => el.classList.add('visible'));
+}
+
+function showRitual() {
+  const aff = document.getElementById('ritual-affirmation');
+  aff.textContent = `"${CONTENT.days[currentDay].affirmation}"`;
+  aff.classList.remove('visible');
+  showScreen('screen-ritual');
+}
+
+function revealAffirmation() {
+  document.getElementById('ritual-affirmation').classList.add('visible');
+}
+
+function completeDay() {
+  completed[currentDay] = true;
+  if (currentDay < 6) { currentDay++; openDay(currentDay); }
+  else { renderCompletion(); showScreen('screen-completion'); }
+}
+
+function renderCompletion() {
+  const c = CONTENT.completion;
+  const heading = userName
+    ? `${userName},\nseven days ago\nyou showed up\nfor yourself.`
+    : c.heading;
+  document.getElementById('completion-inner').innerHTML = `
+    <div class="completion-eyebrow">${c.eyebrow}</div>
+    <div class="completion-heading">${heading}</div>
+    <div class="completion-rule"></div>
+    ${c.body.map(p => `<p class="completion-body">${p}</p>`).join('')}
+    <div class="completion-share-block">
+      <div class="completion-share-prompt">${c.sharePrompt}</div>
+      <button class="share-btn" id="share-btn" onclick="shareProduct()">send it to someone →</button>
+    </div>
+    <div class="completion-next-block">
+      <div class="completion-next-label">${c.nextLabel}</div>
+      <div class="completion-next-body">${c.nextBody}</div>
+      <div class="waitlist-row">
+        <input class="waitlist-input" type="email" id="waitlist-email" placeholder="${c.waitlistPlaceholder}" value="${userEmail}">
+        <button class="waitlist-btn" id="waitlist-btn" onclick="joinWaitlist()">${c.waitlistCta}</button>
+      </div>
+    </div>
+    <div class="completion-closing">${c.closingLine}</div>
+  `;
+}
+
+function shareProduct() {
+  const text = CONTENT.completion.shareText;
+  const btn  = document.getElementById('share-btn');
+  if (navigator.share) { navigator.share({ text }).catch(() => fallbackCopy(text, btn)); return; }
+  fallbackCopy(text, btn);
+}
+
+function fallbackCopy(text, btn) {
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(text).then(() => {
+      btn.textContent = 'copied to clipboard ✓';
+      btn.style.color = 'var(--gold)';
+      btn.style.borderColor = 'var(--gold)';
+    }).catch(() => manualCopy(text, btn));
+    return;
+  }
+  manualCopy(text, btn);
+}
+
+function manualCopy(text, btn) {
+  const ta = document.createElement('textarea');
+  ta.value = text;
+  ta.style.cssText = 'position:fixed;opacity:0;top:0;left:0;';
+  document.body.appendChild(ta);
+  ta.focus(); ta.select();
+  try {
+    document.execCommand('copy');
+    btn.textContent = 'copied to clipboard ✓';
+    btn.style.color = 'var(--gold)';
+  } catch { btn.textContent = 'tap to copy'; btn.onclick = () => prompt('Copy this:', text); }
+  document.body.removeChild(ta);
+}
+
+function joinWaitlist() {
+  const el = document.getElementById('waitlist-email');
+  const v  = el.value.trim();
+  if (!v || !v.includes('@') || !v.includes('.')) {
+    el.style.borderColor = 'var(--gold)'; el.placeholder = 'please enter a valid email'; return;
+  }
+  subscribeToMailerLite(v, userName, MAILERLITE_GROUP_ID);
+  const btn = document.getElementById('waitlist-btn');
+  btn.textContent = "YOU'RE IN ✓";
+  btn.classList.add('submitted');
+  el.disabled = true;
+}
+</script>
+</body>
+</html>
